@@ -1,0 +1,75 @@
+package com.example.agendiario;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+
+@Entity(tableName = "donation")
+
+class Donation {
+
+    @PrimaryKey(autoGenerate = true)
+    @NonNull
+    @ColumnInfo(name = "donationId")
+    private int donationId;
+
+    @Nullable
+    @ColumnInfo(name = "donationName")
+    private String donationName;
+
+    private String donationLocation;
+
+    public Donation(@Nullable String name, String location, int beneficiaries, String creationDate) {
+        donationName = name;
+        donationLocation = location;
+        donationBeneficiaries = beneficiaries;
+        donationCreationDate = creationDate;
+    }
+
+    public int getId() {
+        return donationId;
+    }
+
+    public void setId(int id) {
+        donationId = id;
+    }
+
+    public String getName() {
+        return donationName;
+    }
+
+    public void setName(String name) {
+        donationName = name;
+    }
+
+    public String getLocation() {
+        return donationLocation;
+    }
+
+    public void setLocation(String location) {
+        donationLocation = location;
+    }
+
+    public int getBeneficiaries() {
+        return donationBeneficiaries;
+    }
+
+    public void setBeneficiaries(int beneficiaries) {
+        donationBeneficiaries = beneficiaries;
+    }
+
+    public String getCreationDate() {
+        return donationCreationDate;
+    }
+
+    public void setCreationDate(String creationDate) {
+        donationCreationDate = creationDate;
+    }
+
+    private int donationLocation;
+    private String donationCreationDate;
+
+}
