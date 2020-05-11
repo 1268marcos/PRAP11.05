@@ -7,7 +7,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 
-@Entity(tableName = "donation")
+@Entity(tableName = "donations")
 
 class Donation {
 
