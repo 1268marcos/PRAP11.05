@@ -69,7 +69,7 @@ class Donation {
         donationCreationDate = creationDate;
     }
 
-    private int donationLocation;
+    private int donationBeneficiaries;
     private String donationCreationDate;
 
 }
