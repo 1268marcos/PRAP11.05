@@ -9,7 +9,8 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "donations")
 
-class Donation {
+public class Donation {
+// fiz o acrescimo do modificador de acesso a classe
 
     @PrimaryKey(autoGenerate = true)
     @NonNull
@@ -73,3 +74,5 @@ class Donation {
     private String donationCreationDate;
 
 }
+
+// sugestao - ao nomear algum arquivo não deixe espaco. esse arquivo é uma classe em java. sempre acrescente ao nome do arquivo .JAVA
